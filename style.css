@@ -1,0 +1,151 @@
+.nazvanie {
+	font-family: Brush Script MT, Brush Script Std, cursive, caravan, helvetica, sans-serif;
+	font-size: 30px;
+	text-align: center;
+	color: blue;
+	background-color: 71dc85;
+	border: 3px solid;
+	border-radius: 10px;
+	align-self: center center;
+	padding: 10px;
+	margin: 20px;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6)
+}
+
+.nazvanie:hover {
+	background: cd55e5;
+    transform: scale(1.1);            
+    transition: transform 300ms cubic-bezier(0.07, 0.76, 0.93, 0.59) 0.1s, background 300ms ease-in-out 0.7s;
+}
+
+/*правило анимации верхнего баннера*/
+.watch {
+	text-align: center;
+	color:orangered;
+	animation-name: slidein;
+	animation-duration: 3s;
+	animation-iteration-count: 2;
+}
+
+
+.clumn {
+	width: 47%;
+	font-family: arial;
+	font-size: 20px;
+	color: #586612;
+	border: 1px solid rgba(9, 18, 14, 0.2);
+	padding: 2px;
+}
+
+#recht {
+	font-family: gabriola;
+	font-size: 25px;
+	width: 47%;
+	float: right;
+	margin: 10px;
+	color: white;
+	background-color: black;
+}
+
+/*тут правило для параграфов скорее всего лучше закоментить 
+или переделать чтобы раскрывались
+p {
+  animation: 3s 5 alternate slidein;
+}*/
+
+/*кнопка для перехода на сайт гармонии меняет цвет 
+и увеличивается при наведении курсора*/
+button {
+  color: white;
+  margin-left: 20px;
+  padding: 8px 12px;
+  background: green;
+  border-radius: 3px;
+  border: none;
+}
+
+button:hover {
+    background: cd55e5;
+    transform: scale(1.1);            
+    transition: transform 300ms cubic-bezier(0.07, 0.76, 0.93, 0.59) 0.1s, background 300ms ease-in-out 0.7s;
+}
+
+.server:hover {
+    background: black  ;
+    transform: scale(1.2);
+    
+} 
+
+/*кейфрем для анимации слидеин применяется для верхенго баннера*/
+@keyframes slidein {
+	0% {
+		margin-left: 0%;
+		width: 100%;
+  }
+  	25% {
+  		margin-left: 5%;
+  		width: 100%;
+  	}
+  	50% {
+  		margin-left: -5%;
+  		width: 100%;
+  	}
+  	75% {
+  		margin-left: 5%;
+  		width: 100%;
+  	}
+  	100% {
+  		margin-left: 0%;
+  		 width: 100%;
+  		}
+}
+
+/*Эти правила для маленького блока меню справа*/
+ #navbar {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        width: 100%;
+      }
+ #navbar li {
+        border-left: 10px solid #666;
+        border-bottom: 1px solid #666;
+      }
+  #navbar a {
+        background-color: #949494;
+        color: #fff;
+        padding: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        border-left: 5px solid #33ADFF;
+        display: block;
+      }
+/*Левая панель которая идет вдоль всей страницы*/
+#left_block { 
+        width:15%; 
+        background:#b4e9a7; 
+        float:left; 
+        margin: 0 15px 15px 0; 
+        text-align:center;
+        padding: 10px;
+        }
+        
+        
+#center_block {
+	background-color: #76b9f0;
+	width: 63%; 
+    float:left; 
+    margin: 0 15px 15px 0; 
+    text-align:justify;
+    text-indent: 20px;
+    padding: 10px;
+}
+/* правило для правого блока (лежит в центре)*/
+ #right_block { 
+        width:15%; 
+        background:#f1f1f1; 
+        float:right; 
+        margin: 0 15px 15px 0; 
+        text-align:justify;
+        padding: 10px;
+        }
